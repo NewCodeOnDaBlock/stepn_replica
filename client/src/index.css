@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Zen Dots', cursive;
+  background: #201c1c;
+}
+
+topbar {
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #57fa96;
+  background-color: #cc9cec;
+}
+
+/* .head-title {
+  color: #57fa96;
+  margin-left: 30px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+} */
+
+.menu-list {
+  width: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #57fa96;
+}
+a:hover {
+  cursor: pointer;
+  color: #94f4fc;
+}
+background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.cage {
+  width: 100vw;
+  height: 100vh;
+  z-index: -3;
+  position: relative;
+}
+
+.shoe{
+  z-index: -2;
+  position: absolute;
+}
+
+headline {
+  margin-top: 8%;
+  left: 55%;
+  z-index: 2;
+  position: absolute;
+  color: white;
+  letter-spacing: 3px;
+  font-weight: 800;
+  font-size: 0.7rem;
+}
+
+button {
+  width: 300px;
+  height: 40px;
+  border: 3px solid #ffbcec;
+  box-shadow: 8px 3px 1px #ffbcec;
+  background: #57fa96;
+  border-radius: 10px;
+  margin-left: 35%;
+  margin-top: 15px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  color: black;
+  font-size: 1rem;
+  animation: buttonmove 2s linear infinite;
+}
+
+button:hover {
+  cursor: pointer;
+  background: #94f4fc;
+  border: 3px solid #57fa96;
+  box-shadow: 8px 3px 1px #57fa96;
+  font-weight: 900;
+  letter-spacing: 5px;
+  animation: none;
+}
+
+@keyframes buttonmove {
+  0%{
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+  }
+  25%{
+      transform: translateY(0px) rotate(2deg);
+      opacity: 1;
+  }
+  50%{
+      transform: translateY(0px) rotate(0deg);
+      opacity: 1;
+  }
+  75%{
+      transform: translateY(0px) rotate(2deg);
+      opacity: 1;
+  }
+  100%{
+      transform: translateY(0px) rotate(0deg);
+      opacity: 1;
+  }
+}
